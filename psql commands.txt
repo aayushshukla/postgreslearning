@@ -1,0 +1,55 @@
+psql -d <databasename> -U username -W
+
+example
+
+psql -d pdadb -U postgres -W 
+
+-d specify the name of database to connect
+-U  specify the name of user
+-W  forces psql to ask for password to connect
+
+
+psql -h <hostname> -d <databasename> -U username -W
+
+1)   \dt  - show all tables 
+2)  \d  tablename   - show description of a given table
+3)  \d+ tablename    - show  more description of table includes storage classes , target , access etc
+
+4) \du  = fetch information about all the users
+5)  \du user  -  fetch information about specific user
+
+6) \df - fetch information about all the functions
+7) \dv  - fetch information about all the views
+
+8) \c dbname to switch database
+
+9) \l  list of all the available database
+
+10) \?   Help   \? [command]
+
+11) \dn - fetch all the schema 
+
+12) \dS+  s- sytem defined + for additional information  it will show tables, views , indexes and sequences 
+
+13) \dS+ tablename 
+
+14) \password to change password of working database
+
+15 ) \H  for html format   , \H to off html format
+
+16)  \o filename   commands  \o   write filename in '' and use \\ - double backward slash
+it will create the given file and save  the output of commands in given file
+
+17) \i filename  - it will executes all commands mention in the file  write filename in '' and use \\ - double backward slash
+
+18) \g execute the prev command again
+
+19) \s  display command history
+
+20) \e  edit command in your editor
+
+21) \s filename    display command history on given file
+
+22) \q  quit
+
+
